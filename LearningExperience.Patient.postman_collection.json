@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "a917f43c-61ab-4ddc-bfd2-2ad608950168",
+		"name": "LearningExperience.Patient",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "RegisterPatient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"Patient\":\r\n{\r\n   \"name\": \"Gabriel Melo\",\r\n   \"diseaseLevel\": 1,\r\n   \"age\": 10,\r\n   \"colorsIssue\": 0\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50706/api/v1/Patient/RegisterPatient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50706",
+					"path": [
+						"api",
+						"v1",
+						"Patient",
+						"RegisterPatient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50706/api/v1/Patient/GetAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50706",
+					"path": [
+						"api",
+						"v1",
+						"Patient",
+						"GetAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RemovePatient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"Patient\":\r\n{\r\n   \"name\": \"Gabriel Melo\",\r\n   \"diseaseLevel\": 1,\r\n   \"age\": 10,\r\n   \"colorsIssue\": 0\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50706/api/v1/Patient/RemovePatient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50706",
+					"path": [
+						"api",
+						"v1",
+						"Patient",
+						"RemovePatient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePatient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"Patient\":\r\n{\r\n   \"name\": \"Gabriel Silva\",\r\n   \"diseaseLevel\": 1,\r\n   \"age\": 10,\r\n   \"colorsIssue\": 0\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50706/api/v1/Patient/UpdatePatient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50706",
+					"path": [
+						"api",
+						"v1",
+						"Patient",
+						"UpdatePatient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateMultiplepatients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"Patient\":\r\n{\r\n   \"name\": \"Gabriel Silva\",\r\n   \"diseaseLevel\": 1,\r\n   \"age\": 10,\r\n   \"colorsIssue\": 0\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50706/api/v1/Patient/UpdatePatient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50706",
+					"path": [
+						"api",
+						"v1",
+						"Patient",
+						"UpdatePatient"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

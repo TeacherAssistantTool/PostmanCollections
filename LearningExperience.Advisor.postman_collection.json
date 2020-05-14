@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "69051f5d-2be6-4438-afae-c3d7fe69784b",
+		"name": "LearningExperience.Advisor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "RegisterAdvisor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"Advisor\":\r\n{\r\n   \"name\": \"Adilson Santos\",\r\n   \"profession\": \"Psicologo\",\r\n   \"education\": \"Mestrado\",\r\n   \"specialization\": \"Terapia Intensiva\",\r\n   \"comment\": \"Ótima relação com crianças\"\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50706/api/v1/Advisor/RegisterAdvisor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50706",
+					"path": [
+						"api",
+						"v1",
+						"Advisor",
+						"RegisterAdvisor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50706/api/v1/Advisor/GetAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50706",
+					"path": [
+						"api",
+						"v1",
+						"Advisor",
+						"GetAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RemoveAdvisor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"Advisor\":\r\n{\r\n   \"name\": \"Adilson Santos\",\r\n   \"profession\": \"Psicologo\",\r\n   \"education\": \"Mestrado\",\r\n   \"specialization\": \"Terapia Intensiva\",\r\n   \"comment\": \"Ótima relação com crianças\"\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50706/api/v1/Advisor/RemoveAdvisor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50706",
+					"path": [
+						"api",
+						"v1",
+						"Advisor",
+						"RemoveAdvisor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateAdvisor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"Advisor\":\r\n{\r\n   \"name\": \"Lucas Matheus\",\r\n   \"profession\": \"Psicologo\",\r\n   \"education\": \"Mestrado\",\r\n   \"specialization\": \"Terapia Intensiva\",\r\n   \"comment\": \"Ótima relação com crianças\"\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50706/api/v1/Advisor/UpdateAdvisor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50706",
+					"path": [
+						"api",
+						"v1",
+						"Advisor",
+						"UpdateAdvisor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateMultipleAdvisors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"Advisor\":\r\n{\r\n   \"name\": \"Lucas Matheus\",\r\n   \"profession\": \"Psicologo\",\r\n   \"education\": \"Mestrado\",\r\n   \"specialization\": \"Terapia Intensiva\",\r\n   \"comment\": \"Ótima relação com crianças\"\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50706/api/v1/Advisor/UpdateAdvisor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50706",
+					"path": [
+						"api",
+						"v1",
+						"Advisor",
+						"UpdateAdvisor"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
