@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\t\"Advisor\":\r\n{\r\n   \"name\": \"Adilson Santos\",\r\n   \"profession\": \"Psicologo\",\r\n   \"education\": \"Mestrado\",\r\n   \"specialization\": \"Terapia Intensiva\",\r\n   \"comment\": \"Ótima relação com crianças\"\r\n}\r\n}",
+					"raw": "{\r\n\t\"Advisor\":\r\n{\r\n   \"name\": \"teste Santos\",\r\n   \"profession\": \"Psicologo\",\r\n   \"education\": \"Mestrado\",\r\n   \"specialization\": \"Terapia Intensiva\",\r\n   \"comment\": \"Ótima relação com crianças\"\r\n}\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -20,12 +20,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:50706/api/v1/Advisor/RegisterAdvisor",
-					"protocol": "http",
+					"raw": "{{url}}/api/v1/Advisor/RegisterAdvisor",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "50706",
 					"path": [
 						"api",
 						"v1",
@@ -42,13 +40,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:50706/api/v1/Advisor/GetAll",
-					"protocol": "http",
+					"raw": "{{url}}//api/v1/Advisor/GetAll",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "50706",
 					"path": [
+						"",
 						"api",
 						"v1",
 						"Advisor",
@@ -73,12 +70,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:50706/api/v1/Advisor/RemoveAdvisor",
-					"protocol": "http",
+					"raw": "{{url}}/api/v1/Advisor/RemoveAdvisor",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "50706",
 					"path": [
 						"api",
 						"v1",
@@ -104,12 +99,39 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:50706/api/v1/Advisor/UpdateAdvisor",
-					"protocol": "http",
+					"raw": "{{url}}/api/v1/Advisor/UpdateAdvisor",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "50706",
+					"path": [
+						"api",
+						"v1",
+						"Advisor",
+						"UpdateAdvisor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateAdvisor Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"Advisor\":\r\n{\r\n   \"name\": \"Lucas Matheus\",\r\n   \"profession\": \"Psicologo\",\r\n   \"education\": \"Mestrado\",\r\n   \"specialization\": \"Terapia Intensiva\",\r\n   \"comment\": \"Ótima relação com crianças\"\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/Advisor/UpdateAdvisor",
+					"host": [
+						"{{url}}"
+					],
 					"path": [
 						"api",
 						"v1",
@@ -135,12 +157,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:50706/api/v1/Advisor/UpdateAdvisor",
-					"protocol": "http",
+					"raw": "{{url}}/api/v1/Advisor/UpdateAdvisor",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "50706",
 					"path": [
 						"api",
 						"v1",

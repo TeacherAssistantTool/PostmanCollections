@@ -8,8 +8,17 @@
 		{
 			"name": "RegisterPatient",
 			"request": {
+				"auth": {
+					"type": "noauth"
+				},
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTAwNDc1MTgsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTA3MDYiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUwNzA2In0.VHii8VHNflJBC2LdBwDylX82IML3ckgpODYJ5F4fTUU",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n\t\"Patient\":\r\n{\r\n   \"name\": \"Gabriel Melo\",\r\n   \"diseaseLevel\": 1,\r\n   \"age\": 10,\r\n   \"colorsIssue\": 0\r\n}\r\n}",
@@ -20,12 +29,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:50706/api/v1/Patient/RegisterPatient",
-					"protocol": "http",
+					"raw": "{{url}}/api/v1/Patient/RegisterPatient",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "50706",
 					"path": [
 						"api",
 						"v1",
@@ -42,12 +49,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:50706/api/v1/Patient/GetAll",
-					"protocol": "http",
+					"raw": "{{url}}/api/v1/Patient/GetAll",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "50706",
 					"path": [
 						"api",
 						"v1",
@@ -73,12 +78,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:50706/api/v1/Patient/RemovePatient",
-					"protocol": "http",
+					"raw": "{{url}}/api/v1/Patient/RemovePatient",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "50706",
 					"path": [
 						"api",
 						"v1",
@@ -104,12 +107,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:50706/api/v1/Patient/UpdatePatient",
-					"protocol": "http",
+					"raw": "{{url}}/api/v1/Patient/UpdatePatient",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "50706",
 					"path": [
 						"api",
 						"v1",
@@ -135,12 +136,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:50706/api/v1/Patient/UpdatePatient",
-					"protocol": "http",
+					"raw": "{{url}}/api/v1/Patient/UpdatePatient",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "50706",
 					"path": [
 						"api",
 						"v1",

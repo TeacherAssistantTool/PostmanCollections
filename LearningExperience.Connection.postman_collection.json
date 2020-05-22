@@ -11,12 +11,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:50706/api/v1/Connection/ping",
-					"protocol": "http",
+					"raw": "{{url}}/api/v1/Connection/ping",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "50706",
 					"path": [
 						"api",
 						"v1",
