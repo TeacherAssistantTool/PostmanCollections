@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "a917f43c-61ab-4ddc-bfd2-2ad608950168",
+		"_postman_id": "c433930c-89a6-49ab-b33f-659751580e2b",
 		"name": "LearningExperience.Patient",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -15,13 +15,13 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTAwNDc1MTgsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTA3MDYiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUwNzA2In0.VHii8VHNflJBC2LdBwDylX82IML3ckgpODYJ5F4fTUU",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MDAwMzEwMzEsImlzcyI6Imh0dHBzOi8vbGVhcm5pbmdleHBlcmllY2VhcGkuYXp1cmV3ZWJzaXRlcy5uZXQiLCJhdWQiOiJodHRwczovL2xlYXJuaW5nZXhwZXJpZWNlYXBpLmF6dXJld2Vic2l0ZXMubmV0In0.LyL79kIPm28dzeUDZRKxiKQPcWv9WubQ7VOQfVC30PE",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\t\"Patient\":\r\n{\r\n   \"name\": \"Gabriel Melo\",\r\n   \"diseaseLevel\": 1,\r\n   \"age\": 10,\r\n   \"colorsIssue\": 0\r\n}\r\n}",
+					"raw": "{\r\n   \"name\": \"Richard Rasmussen\",\r\n   \"diseaseLevel\": 1,\r\n   \"age\": 15,\r\n   \"colorsIssue\": false\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -29,10 +29,11 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/api/v1/Patient/RegisterPatient",
+					"raw": "localhost:5000/api/v1/Patient/RegisterPatient",
 					"host": [
-						"{{url}}"
+						"localhost"
 					],
+					"port": "5000",
 					"path": [
 						"api",
 						"v1",

@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "78c826f1-2db0-41fb-ad7b-ac914e386520",
+		"name": "LearningExperience.GameLevelImage",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "RegisterImage",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTk4OTUwNjUsImlzcyI6Imh0dHBzOi8vbGVhcm5pbmdleHBlcmllY2VhcGkuYXp1cmV3ZWJzaXRlcy5uZXQiLCJhdWQiOiJodHRwczovL2xlYXJuaW5nZXhwZXJpZWNlYXBpLmF6dXJld2Vic2l0ZXMubmV0In0.CnLpEPXwHno2f1k5WVKOvQfT_AZxpYAN5Vjo7Qssjp8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"Cavalo\",\r\n    \"GameLevelType\": 1,\r\n    \"Path\": \"../../../../../assets/images/horse.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/GameImageLevel/RegisterImage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"GameImageLevel",
+						"RegisterImage"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

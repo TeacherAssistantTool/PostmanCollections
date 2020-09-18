@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "69051f5d-2be6-4438-afae-c3d7fe69784b",
+		"_postman_id": "7ab7642c-2414-4640-9bb9-47e5c5acb17b",
 		"name": "LearningExperience.Advisor",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\t\"Advisor\":\r\n{\r\n   \"name\": \"teste Santos\",\r\n   \"profession\": \"Psicologo\",\r\n   \"education\": \"Mestrado\",\r\n   \"specialization\": \"Terapia Intensiva\",\r\n   \"comment\": \"Ótima relação com crianças\"\r\n}\r\n}",
+					"raw": "{\r\n   \"name\": \"Guilherme Boulos\",\r\n   \"profession\": \"Psicanalista\",\r\n   \"education\": \"Bacharelado em Psicologia\",\r\n   \"specialization\": \"Crianças\",\r\n   \"comment\": \"Ótima relação com crianças\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -20,10 +20,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/api/v1/Advisor/RegisterAdvisor",
+					"raw": "https://localhost:5000/api/v1/Advisor/RegisterAdvisor",
+					"protocol": "https",
 					"host": [
-						"{{url}}"
+						"localhost"
 					],
+					"port": "5000",
 					"path": [
 						"api",
 						"v1",
@@ -40,12 +42,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url}}//api/v1/Advisor/GetAll",
+					"raw": "{{url}}/api/v1/Advisor/GetAll",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
-						"",
 						"api",
 						"v1",
 						"Advisor",

@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "e5e82a8c-3a9f-4e35-93ca-5920510cb02a",
+		"name": "LearningExperience.GameLevel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GenerateLevel",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MDAxNDI0ODIsImlzcyI6Imh0dHBzOi8vbGVhcm5pbmdleHBlcmllY2VhcGkuYXp1cmV3ZWJzaXRlcy5uZXQiLCJhdWQiOiJodHRwczovL2xlYXJuaW5nZXhwZXJpZWNlYXBpLmF6dXJld2Vic2l0ZXMubmV0In0.6tVVSQe88t4Vj1QMgWyly7E9RMMHuATt7tn-xGvKfVg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"GameLevelType\": 1\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://165.227.62.217:5001/api/v1/GameLevel/GerenateLevel",
+					"protocol": "http",
+					"host": [
+						"165",
+						"227",
+						"62",
+						"217"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"v1",
+						"GameLevel",
+						"GerenateLevel"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

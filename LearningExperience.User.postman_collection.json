@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "707813ff-d77e-4d0e-9d3e-50447dcd0b8e",
+		"name": "LearningExperience.User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "UpdateUserProgress",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MDAwNTQ2NzksImlzcyI6Imh0dHBzOi8vbGVhcm5pbmdleHBlcmllY2VhcGkuYXp1cmV3ZWJzaXRlcy5uZXQiLCJhdWQiOiJodHRwczovL2xlYXJuaW5nZXhwZXJpZWNlYXBpLmF6dXJld2Vic2l0ZXMubmV0In0.hrxkyqKescOrfzh-DnNnjOiHUvIa-LQutYWjNUQXBQE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"65a1ca08-d865-4904-8959-582e7a42e8b2\",\r\n    \"module\": 1,\r\n    \"progress\": 0.5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/User/UpdateUserProgress",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"User",
+						"UpdateUserProgress"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUserProgress",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MDAwNTUxNDUsImlzcyI6Imh0dHBzOi8vbGVhcm5pbmdleHBlcmllY2VhcGkuYXp1cmV3ZWJzaXRlcy5uZXQiLCJhdWQiOiJodHRwczovL2xlYXJuaW5nZXhwZXJpZWNlYXBpLmF6dXJld2Vic2l0ZXMubmV0In0.OvgFojAuGsC5ADjvMhUDRvdW4dUQd38wQkNIdWYiXyM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/User/GetUserProgress?userid=65a1ca08-d865-4904-8959-582e7a42e8b2&module=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"User",
+						"GetUserProgress"
+					],
+					"query": [
+						{
+							"key": "userid",
+							"value": "65a1ca08-d865-4904-8959-582e7a42e8b2"
+						},
+						{
+							"key": "module",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProgressByUser",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MDAwNTUxNDUsImlzcyI6Imh0dHBzOi8vbGVhcm5pbmdleHBlcmllY2VhcGkuYXp1cmV3ZWJzaXRlcy5uZXQiLCJhdWQiOiJodHRwczovL2xlYXJuaW5nZXhwZXJpZWNlYXBpLmF6dXJld2Vic2l0ZXMubmV0In0.OvgFojAuGsC5ADjvMhUDRvdW4dUQd38wQkNIdWYiXyM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/User/GetProgressByUser?userid=65a1ca08-d865-4904-8959-582e7a42e8b2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"User",
+						"GetProgressByUser"
+					],
+					"query": [
+						{
+							"key": "userid",
+							"value": "65a1ca08-d865-4904-8959-582e7a42e8b2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
